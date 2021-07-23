@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+#include<graphics.h>
+#include<conio.h>
+int main()
+{
+int gd=DETECT,gm;
+int i,j;
+initgraph (&gd, &gm, ” “);
+for ( i=200;i<400;i=i+25)
+{
+for( j=200; j<400; j=j+25)
+{
+square(i, j,10);
+}
+}
+getch();
+closegraph();
+return 0;
+}
